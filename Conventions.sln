@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derav.Conventions", "src\Derav.Conventions.csproj", "{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FF002453-CDE2-491C-8819-49C3A544615A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,5 +18,22 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Debug|x64.Build.0 = Debug|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Debug|x86.Build.0 = Debug|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Release|x64.ActiveCfg = Release|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Release|x64.Build.0 = Release|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Release|x86.ActiveCfg = Release|Any CPU
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{111018DF-10FC-49A2-9D1A-35A2CF40BA1A} = {FF002453-CDE2-491C-8819-49C3A544615A}
 	EndGlobalSection
 EndGlobal
