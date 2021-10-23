@@ -1,6 +1,3 @@
-# Postgres
-**/postgres-data/
-
 # Development settings
 *appsettings.Development.json
 
