@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace DaeNe.AspNetCore.Conventions
 {
-    public sealed class DefaultAuthorizationConvention : IActionModelConvention
+    public class DefaultAuthorizationConvention : IActionModelConvention
     {
         public void Apply(ActionModel action)
         {

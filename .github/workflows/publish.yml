@@ -1,0 +1,20 @@
+name: Publish
+
+on:
+  workflow_call:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download a publish artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: nuget
+          path: packages
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+      - name: Add source
+        run: dotnet nuget add source --username dae-ne --password ${{ secrets.GITHUB_TOKEN }} --name github "https://nuget.pkg.github.com/dae-ne/index.json"
+      - name: Publish NuGet package
+        run: dotnet nuget push packages/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source github --skip-duplicate
