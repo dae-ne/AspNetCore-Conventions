@@ -8,12 +8,12 @@ on:
   workflow_call:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
-    - name: Test
+    - name: Run tests
       run: dotnet test --configuration Release --verbosity normal
