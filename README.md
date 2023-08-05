@@ -4,32 +4,6 @@
 - `KebabCaseRouteConvention` - changes route templates to kebab-case format, providing a consistent and standardized URL structure.
 - `RoutePrefixConvention` - creates a common route prefix for all controllers, e.g. "api" (api/controller-route).
 
-## Installation
-
-Add the NuGet package source: `https://nuget.pkg.github.com/dae-ne/index.json`
-
-You can do this by adding a `nuget.config` file to a project:
-
-```XML
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-    <packageSources>
-        <clear />
-        <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
-        <add key="dae-ne" value="https://nuget.pkg.github.com/dae-ne/index.json" />
-    </packageSources>
-    <activePackageSource>
-        <add key="All" value="(Aggregate source)" />
-    </activePackageSource>
-</configuration>
-```
-
-Install the NuGet package:
-
-```bash
-dotnet add package DaeNe.AspNetCore.Conventions --version 1.0.0
-```
-
 ## Configuration
 
 ```C#
