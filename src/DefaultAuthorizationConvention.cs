@@ -3,13 +3,17 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.AspNetCore.Mvc.Authorization;
 
-namespace Derav.Conventions
+namespace DaeNe.AspNetCore.Conventions
 {
-    public class DefaultAuthorizationConvention : IActionModelConvention
+    public sealed class DefaultAuthorizationConvention : IActionModelConvention
     {
         public void Apply(ActionModel action)
         {
-            if (!ShouldApply(action)) return;
+            if (!ShouldApply(action))
+            {
+                return;
+            }
+            
             var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
             action.Filters.Add(new AuthorizeFilter(policy));
         }

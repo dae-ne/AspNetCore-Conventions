@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
-namespace Derav.Conventions
+namespace DaeNe.AspNetCore.Conventions
 {
     public class RoutePrefixConvention : IControllerModelConvention
     {
@@ -16,7 +16,7 @@ namespace Derav.Conventions
         {
             foreach (var selector in controller.Selectors)
             {
-                selector.AttributeRouteModel = selector.AttributeRouteModel != null
+                selector.AttributeRouteModel = !(selector.AttributeRouteModel is null)
                     ? AttributeRouteModel.CombineAttributeRouteModel(_routePrefix, selector.AttributeRouteModel)
                     : _routePrefix;
             }

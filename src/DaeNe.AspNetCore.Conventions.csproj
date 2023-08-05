@@ -1,12 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
-        <LangVersion>9</LangVersion>
-        <PackageId>Derav.Conventions</PackageId>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <PackageId>DaeNe.AspNetCore.Conventions</PackageId>
         <Version>1.0.0</Version>
         <Authors>Rafał Czajka</Authors>
-        <Company>Derav</Company>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
